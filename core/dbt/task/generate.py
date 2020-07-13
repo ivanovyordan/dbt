@@ -231,7 +231,7 @@ class GenerateTask(CompileTask):
             os.path.join(self.config.target_path, 'index.html'))
 
         for asset_path in self.config.asset_paths:
-            to_asset_path=os.path.join(self.config.target_path, asset_path)
+            to_asset_path = os.path.join(self.config.target_path, asset_path)
 
             if os.path.exists(to_asset_path):
                 shutil.rmtree(to_asset_path)
