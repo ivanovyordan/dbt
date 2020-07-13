@@ -580,7 +580,7 @@ class TestProject(BaseConfigTest):
         self.assertEqual(project.test_paths, ['test'])
         self.assertEqual(project.analysis_paths, [])
         self.assertEqual(project.docs_paths, ['models', 'data', 'snapshots', 'macros'])
-        self.assertEqual(project.asset_paths), ['static'])
+        self.assertEqual(project.asset_paths, ['static'])
         self.assertEqual(project.target_path, 'target')
         self.assertEqual(project.clean_targets, ['target'])
         self.assertEqual(project.log_path, 'logs')
